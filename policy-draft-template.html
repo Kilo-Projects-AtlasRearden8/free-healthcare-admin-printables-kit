@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Policy-Draft Template — Healthcare Administration Freebies Kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @page { size: letter; margin: 0.7in 0.75in 0.8in; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #1a1a1a; margin: 0; padding: 0; background: #ffffff; }
+  .kit-page { max-width: 7.1in; margin: 0 auto; padding: 0.35in 0.5in; }
+  .no-print { display: block; }
+  .print-hint { font-size: 13px; color: #444; margin-bottom: 4px; }
+  .btn-print { display: inline-block; font-size: 14px; padding: 6px 14px; margin: 4px 8px 10px 0; background: #0b3d66; color: #fff; border: none; border-radius: 4px; cursor: pointer; font: inherit; }
+  .btn-print:hover { background: #083052; }
+  h1 { font-size: 26px; margin: 0 0 2px 0; color: #0b3d66; }
+  .sub { font-size: 14px; color: #444; margin: 0 0 14px 0; }
+  h2 { font-size: 19px; margin: 18px 0 7px 0; color: #0b3d66; border-bottom: 2px solid #0b3d66; padding-bottom: 3px; }
+  h3 { font-size: 15px; margin: 14px 0 5px 0; color: #0b3d66; }
+  p { margin: 6px 0; }
+  .info-grid { width: 100%; border-collapse: collapse; margin: 10px 0 14px 0; font-size: 15px; }
+  .info-grid td { border: 1px solid #666; padding: 7px 9px; height: 40px; vertical-align: bottom; }
+  .info-grid .lbl { font-size: 12px; color: #333; white-space: nowrap; }
+  .line { border-bottom: 1px solid #1a1a1a; height: 22px; }
+  .field { margin: 8px 0; }
+  .field label { font-size: 12px; color: #333; display: block; margin-bottom: 2px; }
+  .area { width: 100%; border: 1px solid #666; padding: 8px; font: inherit; font-size: 14px; height: 92px; resize: vertical; }
+  .area-sm { height: 62px; }
+  .tracker { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 14px; }
+  .tracker th { background: #eef3f8; border: 1px solid #666; text-align: left; padding: 6px 8px; font-size: 12.5px; color: #0b3d66; }
+  .tracker td { border: 1px solid #666; padding: 7px 8px; height: 30px; vertical-align: middle; font-size: 14px; }
+  .tracker td.blank { height: 30px; }
+  .disclaimer { font-size: 12.5px; color: #333; border: 1px solid #666; background: #f4f6f9; padding: 10px 12px; margin-top: 18px; }
+  .disclaimer b { color: #0b3d66; }
+  .credit { font-size: 12.5px; color: #444; text-align: center; margin-top: 20px; }
+  .credit b { color: #0b3d66; }
+  .caution { font-size: 12.5px; color: #8a5a00; border: 1px solid #c9a227; background: #fdf6e7; padding: 10px 12px; margin-top: 14px; }
+  .caution b { color: #7a4d00; }
+  @media print {
+    body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none !important; }
+    .kit-page { box-shadow: none; border: none; padding: 0; }
+    .btn-print { display: none; }
+    h2 { border-bottom: 1px solid #000; }
+    .disclaimer { border: 1px solid #000; background: #fff !important; }
+    .caution { border: 1px solid #000; background: #fff !important; }
+    input, textarea { background: #fff !important; color: #000 !important; border: 1px solid #333; }
+    .tracker tr { page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="kit-page">
+  <div class="no-print">
+    <p class="print-hint">Tip: fill in on screen, then print (Ctrl+P / Cmd+P) — or print and complete by hand.</p>
+    <button class="btn-print" onclick="window.print(); return false;">Print this form</button>
+  </div>
+  <h1>Policy-Draft Template</h1>
+  <p class="sub">Healthcare Administration &middot; Freebies Kit &middot; Education only — not legal or medical advice</p>
+  <table class="info-grid">
+    <tr>
+      <td><span class="lbl">Policy title</span><div class="line"></div></td>
+      <td><span class="lbl">Policy number</span><div class="line"></div></td>
+      <td><span class="lbl">Version</span><div class="line"></div></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Department / unit</span><div class="line"></div></td>
+      <td><span class="lbl">Effective date</span><div class="line"></div></td>
+      <td><span class="lbl">Review date</span><div class="line"></div></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Draft author</span><div class="line"></div></td>
+      <td><span class="lbl">Approved by</span><div class="line"></div></td>
+      <td><span class="lbl">Date approved</span><div class="line"></div></td>
+    </tr>
+  </table>
+
+  <div class="caution"><b>Education only.</b> This template helps you draft a policy. It is not legal advice and not a substitute for review by your facility's compliance, legal, or clinical leadership. Always follow your employer's procedures and applicable law.</div>
+
+  <h2>1. Purpose</h2>
+  <p>Why does this policy exist? What problem does it solve? Who does it protect?</p>
+  <textarea class="area" placeholder="Enter the purpose of this policy&hellip;"></textarea>
+
+  <h2>2. Scope</h2>
+  <p>Who and what does this policy apply to? (Staff roles, departments, settings, patient types, equipment, etc.)</p>
+  <textarea class="area" placeholder="Enter the scope of this policy&hellip;"></textarea>
+
+  <h2>3. Policy statement</h2>
+  <p>The core rule or requirement, stated plainly. Use short sentences. Avoid jargon.</p>
+  <textarea class="area area-sm" placeholder="Enter the policy statement&hellip;"></textarea>
+
+  <h2>4. Definitions</h2>
+  <p>Define any terms that could be unclear.</p>
+  <table class="tracker">
+    <tr><th style="width:200px">Term</th><th>Definition</th></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <h2>5. Procedure</h2>
+  <p>Step-by-step how to follow this policy. Number the steps.</p>
+  <ol>
+    <li><div class="area area-sm" placeholder="Step 1"></div></li>
+    <li><div class="area area-sm" placeholder="Step 2"></div></li>
+    <li><div class="area area-sm" placeholder="Step 3"></div></li>
+    <li><div class="area area-sm" placeholder="Step 4"></div></li>
+    <li><div class="area area-sm" placeholder="Step 5"></div></li>
+  </ol>
+
+  <h2>6. Responsibilities</h2>
+  <p>Who is responsible for what under this policy.</p>
+  <table class="tracker">
+    <tr><th style="width:200px">Role</th><th>Responsibility</th></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <h2>7. Compliance & monitoring</h2>
+  <p>How will you know the policy is being followed? Who checks, how often, and what happens if it is not followed?</p>
+  <textarea class="area" placeholder="Enter compliance and monitoring details&hellip;"></textarea>
+
+  <h2>8. References</h2>
+  <p>Laws, regulations, accreditation standards, or other policies this document references.</p>
+  <textarea class="area area-sm" placeholder="List statutes, regulations, standards, and related policies&hellip;"></textarea>
+
+  <h2>9. Revision history</h2>
+  <table class="tracker">
+    <tr><th style="width:110px">Version</th><th style="width:130px">Date</th><th>Change summary</th><th style="width:140px">Author</th></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <h2>10. Approval</h2>
+  <table class="tracker">
+    <tr><th style="width:150px">Name / title</th><th style="width:200px">Signature</th><th style="width:110px">Date</th></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <div class="disclaimer"><b>Education only.</b> This template is an administrative aid, not legal or medical advice and not a substitute for review by your facility's compliance, legal, or clinical leadership. Always follow your employer's procedures and applicable law.</div>
+  <p class="credit">Created and published by <b>Asdale Dynamics, LLC</b> (Indiana, formed October 2026) &middot; dylanasdale.github.io</p>
+</div>
+</body>
+</html>

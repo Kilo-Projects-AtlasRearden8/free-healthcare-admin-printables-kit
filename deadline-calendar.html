@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Deadline Calendar — Healthcare Administration Freebies Kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @page { size: letter; margin: 0.65in 0.7in 0.75in; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #1a1a1a; margin: 0; padding: 0; background: #ffffff; }
+  .kit-page { max-width: 7.2in; margin: 0 auto; padding: 0.3in 0.45in; }
+  .no-print { display: block; }
+  .print-hint { font-size: 13px; color: #444; margin-bottom: 4px; }
+  .btn-print { display: inline-block; font-size: 14px; padding: 6px 14px; margin: 4px 8px 10px 0; background: #0b3d66; color: #fff; border: none; border-radius: 4px; cursor: pointer; font: inherit; }
+  .btn-print:hover { background: #083052; }
+  h1 { font-size: 26px; margin: 0 0 2px 0; color: #0b3d66; }
+  .sub { font-size: 14px; color: #444; margin: 0 0 14px 0; }
+  h2 { font-size: 19px; margin: 18px 0 7px 0; color: #0b3d66; border-bottom: 2px solid #0b3d66; padding-bottom: 3px; }
+  p { margin: 6px 0; }
+  .info-grid { width: 100%; border-collapse: collapse; margin: 10px 0 12px 0; font-size: 15px; }
+  .info-grid td { border: 1px solid #666; padding: 7px 9px; height: 40px; vertical-align: bottom; }
+  .info-grid .lbl { font-size: 12px; color: #333; white-space: nowrap; }
+  .tracker { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 14px; }
+  .tracker th { background: #eef3f8; border: 1px solid #666; text-align: left; padding: 6px 8px; font-size: 12.5px; color: #0b3d66; }
+  .tracker td { border: 1px solid #666; padding: 7px 8px; height: 30px; vertical-align: middle; font-size: 14px; }
+  .tracker td.blank { height: 30px; }
+  .cal { width: 100%; border-collapse: collapse; margin: 10px 0 4px 0; table-layout: fixed; font-size: 15px; }
+  .cal th { background: #eef3f8; border: 1px solid #666; text-align: center; padding: 6px 2px; font-size: 13px; color: #0b3d66; height: 30px; }
+  .cal td { border: 1px solid #666; height: 78px; vertical-align: top; padding: 5px 6px; position: relative; }
+  .cal .date { font-weight: bold; font-size: 14px; color: #0b3d66; }
+  .cal .lines { margin-top: 6px; }
+  .cal .lines div { border-bottom: 1px solid #1a1a1a; height: 16px; font-size: 12px; }
+  .weekend { background: #f7f9fb; }
+  .legend { font-size: 12.5px; color: #444; margin-top: 8px; }
+  .notes { width: 100%; border: 1px solid #666; padding: 8px; font: inherit; font-size: 14px; height: 78px; resize: vertical; }
+  .disclaimer { font-size: 12.5px; color: #333; border: 1px solid #666; background: #f4f6f9; padding: 10px 12px; margin-top: 18px; }
+  .disclaimer b { color: #0b3d66; }
+  .credit { font-size: 12.5px; color: #444; text-align: center; margin-top: 20px; }
+  .credit b { color: #0b3d66; }
+  @media print {
+    body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none !important; }
+    .kit-page { box-shadow: none; border: none; padding: 0; }
+    .btn-print { display: none; }
+    h2 { border-bottom: 1px solid #000; }
+    .disclaimer { border: 1px solid #000; background: #fff !important; }
+    input, textarea { background: #fff !important; color: #000 !important; border: 1px solid #333; }
+    .cal tr { page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="kit-page">
+  <div class="no-print">
+    <p class="print-hint">Tip: fill in on screen, then print (Ctrl+P / Cmd+P) — or print and complete by hand.</p>
+    <button class="btn-print" onclick="window.print(); return false;">Print this form</button>
+  </div>
+  <h1>Deadline Calendar</h1>
+  <p class="sub">Healthcare Administration &middot; Freebies Kit &middot; Education only — not medical or legal advice</p>
+  <table class="info-grid">
+    <tr>
+      <td><span class="lbl">Month</span><input type="text" style="width:100%; font:inherit; font-size:14px; border:none; border-bottom:1px solid #1a1a1a; background:transparent;"></td>
+      <td><span class="lbl">Year</span><input type="text" style="width:100%; font:inherit; font-size:14px; border:none; border-bottom:1px solid #1a1a1a; background:transparent;"></td>
+      <td><span class="lbl">Prepared by</span><div class="line" style="height:auto;"></div></td>
+      <td><span class="lbl">Department</span><div class="line" style="height:auto;"></div></td>
+    </tr>
+  </table>
+
+  <h2>Key deadlines &amp; task tracker</h2>
+  <p>List upcoming deadlines here, then mark each date on the calendar below.</p>
+  <table class="tracker">
+    <tr>
+      <th style="width:40px">#</th>
+      <th>Task / deadline</th>
+      <th style="width:130px">Due date</th>
+      <th style="width:90px">Priority</th>
+      <th style="width:90px">Status</th>
+      <th>Notes</th>
+    </tr>
+    <tr><td class="blank">1</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">2</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">3</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">4</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">5</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">6</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">7</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">8</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">9</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">10</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">11</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">12</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <h2>Monthly calendar</h2>
+  <p>Write each deadline on its date cell. Shade or circle dates as they approach.</p>
+  <table class="cal">
+    <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+    <tr class="weekend"><td><div class="date">1</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">2</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">3</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">4</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">5</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">6</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td class="weekend"><div class="date">7</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td></tr>
+    <tr><td><div class="date">8</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">9</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">10</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">11</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">12</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">13</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td class="weekend"><div class="date">14</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td></tr>
+    <tr class="weekend"><td><div class="date">15</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">16</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">17</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">18</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">19</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">20</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td class="weekend"><div class="date">21</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td></tr>
+    <tr><td><div class="date">22</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">23</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">24</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">25</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">26</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">27</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td class="weekend"><div class="date">28</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td></tr>
+    <tr class="weekend"><td><div class="date">29</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">30</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td><div class="date">31</div><div class="lines"><div></div><div></div><div></div><div></div><div></div></div></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <p class="legend">Legend: shade or circle approaching dates &middot; mark completed items with a check &middot; weekends shaded lightly</p>
+
+  <p><b>Monthly notes:</b></p>
+  <textarea class="notes" placeholder="Recurring deadlines, coverage plans, escalation contacts&hellip;"></textarea>
+
+  <div class="disclaimer"><b>Education only.</b> This calendar is a scheduling aid, not medical advice and not a substitute for clinical judgment, facility policy, or applicable law. Always follow your employer's procedures.</div>
+  <p class="credit">Created and published by <b>Asdale Dynamics, LLC</b> (Indiana, formed October 2026) &middot; dylanasdale.github.io</p>
+</div>
+</body>
+</html>

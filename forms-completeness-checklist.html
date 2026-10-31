@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Forms-Completeness Checklist — Healthcare Administration Freebies Kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @page { size: letter; margin: 0.7in 0.75in 0.8in; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #1a1a1a; margin: 0; padding: 0; background: #ffffff; }
+  .kit-page { max-width: 7.1in; margin: 0 auto; padding: 0.35in 0.5in; }
+  .no-print { display: block; }
+  .print-hint { font-size: 13px; color: #444; margin-bottom: 4px; }
+  .btn-print { display: inline-block; font-size: 14px; padding: 6px 14px; margin: 4px 8px 10px 0; background: #0b3d66; color: #fff; border: none; border-radius: 4px; cursor: pointer; font: inherit; }
+  .btn-print:hover { background: #083052; }
+  h1 { font-size: 26px; margin: 0 0 2px 0; color: #0b3d66; }
+  .sub { font-size: 14px; color: #444; margin: 0 0 14px 0; }
+  h2 { font-size: 19px; margin: 18px 0 7px 0; color: #0b3d66; border-bottom: 2px solid #0b3d66; padding-bottom: 3px; }
+  p { margin: 6px 0; }
+  .info-grid { width: 100%; border-collapse: collapse; margin: 10px 0 14px 0; font-size: 15px; }
+  .info-grid td { border: 1px solid #666; padding: 7px 9px; height: 42px; vertical-align: bottom; }
+  .info-grid .lbl { font-size: 12px; color: #333; white-space: nowrap; }
+  .checklist { border-collapse: collapse; width: 100%; margin: 8px 0 4px 0; font-size: 15px; }
+  .checklist th { background: #eef3f8; border: 1px solid #666; text-align: left; padding: 6px 9px; font-size: 13px; color: #0b3d66; }
+  .checklist td { border: 1px solid #666; padding: 7px 9px; height: 30px; vertical-align: middle; }
+  .checklist .cb { text-align: center; }
+  .checklist input[type="checkbox"] { width: 18px; height: 18px; }
+  .line { border-bottom: 1px solid #1a1a1a; height: 22px; }
+  .notes { width: 100%; border: 1px solid #666; padding: 8px; font: inherit; font-size: 14px; height: 78px; resize: vertical; }
+  .sig-row { margin-top: 22px; display: flex; gap: 24px; }
+  .sig-col { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+  .sig-line { border-bottom: 1px solid #1a1a1a; height: 24px; padding-bottom: 2px; font-size: 12px; color: #333; }
+  .disclaimer { font-size: 12.5px; color: #333; border: 1px solid #666; background: #f4f6f9; padding: 10px 12px; margin-top: 18px; }
+  .disclaimer b { color: #0b3d66; }
+  .credit { font-size: 12.5px; color: #444; text-align: center; margin-top: 20px; }
+  .credit b { color: #0b3d66; }
+  @media print {
+    body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none !important; }
+    .kit-page { box-shadow: none; border: none; padding: 0; }
+    .btn-print { display: none; }
+    h2 { border-bottom: 1px solid #000; }
+    .disclaimer { border: 1px solid #000; background: #fff !important; }
+    input, textarea { background: #fff !important; color: #000 !important; border: 1px solid #333; }
+    .checklist tr { page-break-inside: avoid; }
+    .sig-row { page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="kit-page">
+  <div class="no-print">
+    <p class="print-hint">Tip: fill in on screen, then print (Ctrl+P / Cmd+P) — or print and complete by hand.</p>
+    <button class="btn-print" onclick="window.print(); return false;">Print this form</button>
+  </div>
+  <h1>Forms-Completeness Checklist</h1>
+  <p class="sub">Healthcare Administration &middot; Freebies Kit &middot; Education only — not medical or legal advice</p>
+  <table class="info-grid">
+    <tr>
+      <td><span class="lbl">Patient name</span><div class="line"></div></td>
+      <td><span class="lbl">MRN</span><div class="line"></div></td>
+      <td><span class="lbl">Date of birth</span><div class="line"></div></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Encounter date</span><div class="line"></div></td>
+      <td><span class="lbl">Department / unit</span><div class="line"></div></td>
+      <td><span class="lbl">Completed by</span><div class="line"></div></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Role</span><div class="line"></div></td>
+      <td><span class="lbl">Shift</span><div class="line"></div></td>
+      <td><span class="lbl">Date completed</span><div class="line"></div></td>
+    </tr>
+  </table>
+
+  <h2>A. Patient identification &amp; demographics</h2>
+  <table class="checklist">
+    <tr><th style="width:40px">&#10003;</th><th>Item</th><th style="width:220px">Notes</th></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Patient name spelled correctly on all forms</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Date of birth matches wristband / records</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>MRN matches wristband and system record</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Address and phone number current</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Emergency contact listed with relationship and phone</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Preferred language documented</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Interpreter need identified and arranged (if applicable)</td><td><div class="line"></div></td></tr>
+  </table>
+
+  <h2>B. Consents &amp; authorizations</h2>
+  <table class="checklist">
+    <tr><th style="width:40px">&#10003;</th><th>Item</th><th style="width:220px">Notes</th></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>General consent to treat signed and dated</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Consent signature matches patient or legal representative</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Representative relationship documented (if applicable)</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>HIPAA / privacy practices acknowledgment signed</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Financial responsibility form signed</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Photo / media release signed or declined (if applicable)</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Advance directives discussed; copy obtained (if applicable)</td><td><div class="line"></div></td></tr>
+  </table>
+
+  <h2>C. Insurance &amp; billing</h2>
+  <table class="checklist">
+    <tr><th style="width:40px">&#10003;</th><th>Item</th><th style="width:220px">Notes</th></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Insurance card copied front and back</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Eligibility verified and documented</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Required authorization / referral obtained</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Copay collected and receipted</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Self-pay / uninsured options discussed (if applicable)</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Patient billing questions addressed</td><td><div class="line"></div></td></tr>
+  </table>
+
+  <h2>D. Clinical documentation</h2>
+  <table class="checklist">
+    <tr><th style="width:40px">&#10003;</th><th>Item</th><th style="width:220px">Notes</th></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>History and physical documented</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Medication reconciliation completed</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Allergies documented (drug, food, environmental; reaction noted)</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Immunization record obtained or requested</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Code status documented</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Fall risk / skin assessment completed</td><td><div class="line"></div></td></tr>
+  </table>
+
+  <h2>E. Discharge &amp; follow-up</h2>
+  <table class="checklist">
+    <tr><th style="width:40px">&#10003;</th><th>Item</th><th style="width:220px">Notes</th></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Discharge instructions given and reviewed</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Follow-up appointment scheduled</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Updated medication list provided</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Referral appointments scheduled</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Home-health / equipment needs arranged</td><td><div class="line"></div></td></tr>
+    <tr><td class="cb"><input type="checkbox"></td><td>Patient / caregiver teach-back completed</td><td><div class="line"></div></td></tr>
+  </table>
+
+  <p><b>Additional notes:</b></p>
+  <textarea class="notes" placeholder="Any missing items, follow-ups needed, or escalations&hellip;"></textarea>
+
+  <div class="sig-row">
+    <div class="sig-col">
+      <div class="sig-line">Completed by (signature)</div>
+      <div class="sig-line" style="height:18px">Printed name &amp; title</div>
+    </div>
+    <div class="sig-col">
+      <div class="sig-line">Date</div>
+      <div class="sig-line" style="height:18px">Time</div>
+    </div>
+  </div>
+
+  <div class="disclaimer"><b>Education only.</b> This checklist is an administrative aid, not medical advice and not a substitute for clinical judgment, facility policy, or applicable law. Always follow your employer's procedures.</div>
+  <p class="credit">Created and published by <b>Asdale Dynamics, LLC</b> (Indiana, formed October 2026) &middot; dylanasdale.github.io</p>
+</div>
+</body>
+</html>

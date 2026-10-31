@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meeting-Prep Sheet — Healthcare Administration Freebies Kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @page { size: letter; margin: 0.7in 0.75in 0.8in; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #1a1a1a; margin: 0; padding: 0; background: #ffffff; }
+  .kit-page { max-width: 7.1in; margin: 0 auto; padding: 0.35in 0.5in; }
+  .no-print { display: block; }
+  .print-hint { font-size: 13px; color: #444; margin-bottom: 4px; }
+  .btn-print { display: inline-block; font-size: 14px; padding: 6px 14px; margin: 4px 8px 10px 0; background: #0b3d66; color: #fff; border: none; border-radius: 4px; cursor: pointer; font: inherit; }
+  .btn-print:hover { background: #083052; }
+  h1 { font-size: 26px; margin: 0 0 2px 0; color: #0b3d66; }
+  .sub { font-size: 14px; color: #444; margin: 0 0 14px 0; }
+  h2 { font-size: 19px; margin: 18px 0 7px 0; color: #0b3d66; border-bottom: 2px solid #0b3d66; padding-bottom: 3px; }
+  p { margin: 6px 0; }
+  .info-grid { width: 100%; border-collapse: collapse; margin: 10px 0 14px 0; font-size: 15px; }
+  .info-grid td { border: 1px solid #666; padding: 7px 9px; height: 40px; vertical-align: bottom; }
+  .info-grid .lbl { font-size: 12px; color: #333; white-space: nowrap; }
+  .line { border-bottom: 1px solid #1a1a1a; height: 22px; }
+  .field { display: flex; gap: 10px; align-items: baseline; margin: 8px 0; }
+  .field > div { flex: 1; }
+  .field label { font-size: 12px; color: #333; white-space: nowrap; }
+  .area { width: 100%; border: 1px solid #666; padding: 8px; font: inherit; font-size: 14px; height: 78px; resize: vertical; }
+  .tracker { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 14px; }
+  .tracker th { background: #eef3f8; border: 1px solid #666; text-align: left; padding: 6px 8px; font-size: 12.5px; color: #0b3d66; }
+  .tracker td { border: 1px solid #666; padding: 7px 8px; height: 30px; vertical-align: middle; font-size: 14px; }
+  .tracker td.blank { height: 30px; }
+  .attendees { width: 100%; border-collapse: collapse; margin: 8px 0 4px 0; font-size: 14px; }
+  .attendees th { background: #eef3f8; border: 1px solid #666; text-align: left; padding: 6px 8px; font-size: 12.5px; color: #0b3d66; }
+  .attendees td { border: 1px solid #666; padding: 7px 8px; height: 30px; vertical-align: middle; font-size: 14px; }
+  .attendees td.blank { height: 30px; }
+  .disclaimer { font-size: 12.5px; color: #333; border: 1px solid #666; background: #f4f6f9; padding: 10px 12px; margin-top: 18px; }
+  .disclaimer b { color: #0b3d66; }
+  .credit { font-size: 12.5px; color: #444; text-align: center; margin-top: 20px; }
+  .credit b { color: #0b3d66; }
+  @media print {
+    body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none !important; }
+    .kit-page { box-shadow: none; border: none; padding: 0; }
+    .btn-print { display: none; }
+    h2 { border-bottom: 1px solid #000; }
+    .disclaimer { border: 1px solid #000; background: #fff !important; }
+    input, textarea { background: #fff !important; color: #000 !important; border: 1px solid #333; }
+    .tracker tr, .attendees tr { page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="kit-page">
+  <div class="no-print">
+    <p class="print-hint">Tip: fill in on screen, then print (Ctrl+P / Cmd+P) — or print and complete by hand.</p>
+    <button class="btn-print" onclick="window.print(); return false;">Print this form</button>
+  </div>
+  <h1>Meeting-Prep Sheet</h1>
+  <p class="sub">Healthcare Administration &middot; Freebies Kit &middot; Education only — not medical or legal advice</p>
+  <table class="info-grid">
+    <tr>
+      <td><span class="lbl">Meeting title</span><div class="line"></div></td>
+      <td><span class="lbl">Date</span><div class="line"></div></td>
+      <td><span class="lbl">Time</span><div class="line"></div></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Location</span><div class="line"></div></td>
+      <td><span class="lbl">Organizer</span><div class="line"></div></td>
+      <td><span class="lbl">Meeting type</span><div class="line"></div></td>
+    </tr>
+  </table>
+
+  <h2>Purpose &amp; desired outcome</h2>
+  <textarea class="area" placeholder="Why are we meeting? What decisions or outcomes are needed by the end?"></textarea>
+
+  <h2>Attendees</h2>
+  <table class="attendees">
+    <tr><th style="width:40px">#</th><th>Name</th><th style="width:150px">Role</th><th style="width:110px">Required / optional</th></tr>
+    <tr><td class="blank">1</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">2</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">3</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">4</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">5</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">6</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">7</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">8</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <h2>Agenda</h2>
+  <table class="tracker">
+    <tr><th style="width:40px">#</th><th>Topic</th><th style="width:120px">Lead</th><th style="width:90px">Time</th><th>Needed from attendees</th></tr>
+    <tr><td class="blank">1</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">2</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">3</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">4</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">5</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">6</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <h2>Pre-work &amp; materials to review</h2>
+  <textarea class="area" placeholder="Reports, charts, policies, or previous minutes attendees should read before the meeting"></textarea>
+
+  <h2>Decisions needed</h2>
+  <textarea class="area" placeholder="List the decisions that must be made in this meeting, and who has authority to make them"></textarea>
+
+  <h2>Action items</h2>
+  <table class="tracker">
+    <tr><th style="width:40px">#</th><th>Action</th><th style="width:130px">Owner</th><th style="width:110px">Due date</th><th style="width:90px">Status</th></tr>
+    <tr><td class="blank">1</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">2</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">3</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">4</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+    <tr><td class="blank">5</td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td><td class="blank"><div class="line"></div></td></tr>
+  </table>
+
+  <h2>Follow-up</h2>
+  <div class="field"><div><span class="label">Follow-up meeting</span><div class="line"></div></div><div style="width:120px"><span class="label">Date / time</span><div class="line"></div></div></div>
+  <div class="field"><div><span class="label">Minutes distributed to</span><div class="line"></div></div><div style="width:120px"><span class="label">By</span><div class="line"></div></div></div>
+
+  <div class="disclaimer"><b>Education only.</b> This sheet is a meeting-planning aid, not medical advice and not a substitute for clinical judgment, facility policy, or applicable law. Always follow your employer's procedures.</div>
+  <p class="credit">Created and published by <b>Asdale Dynamics, LLC</b> (Indiana, formed October 2026) &middot; dylanasdale.github.io</p>
+</div>
+</body>
+</html>
